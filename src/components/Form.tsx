@@ -70,7 +70,7 @@ export default function RegistrationForm() {
                   !existingNames.includes(value) || "Name already exists",
               })}
               placeholder="Your full name"
-              className={`w-full rounded-lg border px-4 py-2 transition-shadow focus:outline-none focus:ring-2 focus:ring-purple-400 ${
+              className={`input-primary ${
                 errors.name ? "border-red-400" : "border-gray-200"
               }`}
             />
@@ -92,7 +92,7 @@ export default function RegistrationForm() {
                 },
               })}
               placeholder="you@example.com"
-              className={`w-full rounded-lg border px-4 py-2 transition-shadow focus:outline-none focus:ring-2 focus:ring-purple-400 ${
+              className={`input-primary ${
                 errors.username ? "border-red-400" : "border-gray-200"
               }`}
             />
@@ -117,7 +117,7 @@ export default function RegistrationForm() {
                 },
               })}
               placeholder="Enter password"
-              className={`w-full rounded-lg border px-4 py-2 transition-shadow focus:outline-none focus:ring-2 focus:ring-purple-400 ${
+              className={`input-primary ${
                 errors.password ? "border-red-400" : "border-gray-200"
               }`}
             />
@@ -140,7 +140,7 @@ export default function RegistrationForm() {
                   value === password || "Passwords do not match",
               })}
               placeholder="Re-type password"
-              className={`w-full rounded-lg border px-4 py-2 transition-shadow focus:outline-none focus:ring-2 focus:ring-purple-400 ${
+              className={`input-primary ${
                 errors.confirmPassword ? "border-red-400" : "border-gray-200"
               }`}
             />
@@ -229,7 +229,7 @@ export default function RegistrationForm() {
             <button
               type="submit"
               disabled={isSubmitting || !isValid}
-              className="flex-1 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-purple-600 to-pink-500 hover:scale-[1.02] transform transition-shadow shadow-md focus:ring-4 focus:ring-purple-300 disabled:opacity-60 cursor-pointer flex items-center justify-center gap-2"
+              className="flex-1 py-2 rounded-lg font-medium text-white btn-primary"
             >
               {isSubmitting ? (
                 <>
