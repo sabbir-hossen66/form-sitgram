@@ -1,6 +1,4 @@
 "use client";
-
-import { useLoader } from "@/hooks/useLoader";
 import React from "react";
 import { useForm } from "react-hook-form";
 import type { SubmitHandler } from "react-hook-form";
@@ -81,7 +79,6 @@ export default function RegistrationForm() {
             )}
           </div>
 
-          {/* Username (email) */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
               Username (Email) <span className="text-red-500">*</span>
@@ -228,7 +225,6 @@ export default function RegistrationForm() {
             )}
           </div>
 
-          {/* Buttons */}
           <div className="flex items-center justify-between gap-3">
             <button
               type="submit"
@@ -255,9 +251,6 @@ export default function RegistrationForm() {
           </div>
         </form>
         <SubmittedInfo data={submittedData} />
-        <p className="text-xs text-gray-500 mt-4">
-          By continuing you agree to our Terms & Conditions.
-        </p>
       </div>
     </div>
   );
